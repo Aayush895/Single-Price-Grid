@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --light-cyan: rgb(104,186,184);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  background-color: rgb(232, 239, 245);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 4fr);
+  width: 45%;
+  box-shadow: 10px 10px 38px -19px rgba(0,0,0,0.75);
+  border-radius: 0.5rem;
+}
+
+.item-1 {
+  grid-column: 1 / span 2;
+  width: 100%;
+  padding: 3rem 2rem;
+  color: var(--Grayish-Blue);
+  background-color: whitesmoke;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.item-1 > h2 {
+  margin-bottom: 2rem;
+  font-weight: 700;
+  color: var(--Cyan);
+}
+
+.item-1 > h4 {
+  margin-bottom: 1rem;
+  color: var(--Bright-Yellow);
+}
+
+.item-2, .item-3 {
+  padding: 3rem 2rem;
+}
+
+.item-2 {
+  background-color: var(--Cyan);
+  border-radius: 0 0 0 0.5rem;
+}
+
+.item-2 > h4 {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  font-size: large;
+  color: whitesmoke;
+}
+
+.item-2 > p > span {
+  font-size: xx-large;
+  font-weight: 700;
+  color: whitesmoke;
+}
+
+.item-2 > p {
+  margin-bottom: 1rem;
+  color: var(--Light-Gray);
+}
+
+.item-2 > button {
+  width: 100%;
+  padding: 15px 20px;
+  background-color: var(--Bright-Yellow);
+  color: whitesmoke;
+  border: none;
+  border-radius: 0.3rem;
+  box-shadow: 4px 5px 5px 0px rgba(0,0,0,0.35);
+  font-family: 'Karla', sans-serif;
+  font-size: large;
+  cursor: pointer;
+}
+
+.item-3 {
+  background-color: var(--light-cyan);
+  color: var(--Light-Gray);
+  border-radius: 0 0 0.5rem 0;
+}
+
+.item-3 > h4 {
+  font-weight: 700;
+  font-size: large;
+  margin-bottom: 1.5rem;
+  color: whitesmoke;
+}
+
+@media (max-width: 767px) {
+  #grid-container {
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .item-1,.item-2,.item-3 {
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  #grid-container {
+    margin-top: 8rem;
+  }
+}
+
+@media (max-width: 280px) {
+  #grid-container {
+    margin-top: 17rem;
+  }
+}
