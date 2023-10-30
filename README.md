@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Link](https://github.com/Aayush895/Single-Price-Grid)
-- Live Site URL: [Hosted Link](https://your-live-site-url.com)
+- Live Site URL: [Hosted Link](https://aayush895.github.io/Single-Price-Grid/)
 
 ## My process
 
